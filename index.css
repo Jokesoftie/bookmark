@@ -13,6 +13,10 @@
 }
 body {
   font-family: "Rubik";
+  width: 100%;
+}
+.container {
+  width: 100%;
 }
 header {
   display: flex;
@@ -52,7 +56,6 @@ header {
 .illustration-image,
 .download-extension-text {
   width: 50%;
-  
 }
 .illustration-image,
 .illustration-tab {
@@ -113,7 +116,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 .page-link-text h4,
 .illustration-tab-text h3 {
@@ -271,7 +273,6 @@ a {
   width: 55%;
   line-height: 1.5;
   color: black;
-  
 }
 .FAQ {
   margin-bottom: 2rem;
@@ -341,11 +342,45 @@ footer {
   list-style: none;
   gap: 1rem;
 }
-footer a{
+footer a {
   color: white;
 }
 .footer-image {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.mobile-toggle {
+  display: none;
+}
+/* mobile style */
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+  .about-page {
+    flex-direction: column-reverse;
+    padding: 3rem 0;
+    /* margin-bottom: 3rem; */
+    background-color: lightgrey;
+  }
+  .illustration-image,
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  .illustration-image {
+    height: 300px;
+  }
 }
