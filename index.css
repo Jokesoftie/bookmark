@@ -13,11 +13,12 @@
 }
 body {
   font-family: "Rubik";
-  width: 100%;
+  /* width: 100%; */
+  /* overflow: hidden; */
 }
-.container {
+/* .container {
   width: 100%;
-}
+} */
 header {
   display: flex;
   justify-content: space-between;
@@ -377,6 +378,15 @@ footer a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .about-text h2{
+    font-size: 3.5rem;
+  }
+  .download-extension-container{
+    flex-direction: column;
+  }
+  .footer-head{
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 425px) {
